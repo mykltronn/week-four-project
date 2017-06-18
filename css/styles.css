@@ -1,0 +1,132 @@
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+
+
+
+/************************/
+
+
+/* to simulate the JS hide/show effects*/
+/*-- on page load:
+
+.results is display: none;
+.player is display: none;
+.search is display: block;
+
+
+
+
+*/
+
+
+.player {
+
+  text-align: center;
+  height: 100px;
+}
+
+.music-player {
+  display: none;
+}
+
+.player-show {
+  display: block;
+}
+
+.search {
+  display: inline-block;
+  text-align: center;
+  margin: 30vh 0px 0px 25vw;
+  border-radius: 5px;
+  box-shadow: 6px 9px 18px -10px rgba(0,0,0,0.67);
+  transition: all 0.5;
+}
+
+.search-small {
+  display: inline-block;
+  margin: 5vh 0px 50px 25vw;
+  box-shadow: none;
+  transition: all 1s;
+}
+
+.search label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.search-input {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: darkgrey;
+  width: 50vw;
+  margin: 20px 40px;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.search-button {
+  background-color: white;
+  border: none;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+.results {
+  display: none;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.results-show {
+  display: grid;
+}
+
+.album-art img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 20px;
+  box-shadow: 0px 0px 51px -9px rgba(0,0,0,0.75);
+}
+
+ul {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.band-name {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  border-bottom: solid 2px black;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.song-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: darkgrey;
+  text-align: center;
+  padding: 4px;
+}
