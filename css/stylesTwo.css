@@ -6,6 +6,7 @@
   padding: 0px;
   font-family: 'Roboto', sans-serif;
   list-style: none;
+  box-sizing: border-box;
 }
 
 
@@ -27,13 +28,12 @@
 
 
 .player {
-
+  display: none;
   text-align: center;
   height: 100px;
 }
 
 .music-player {
-  display: none;
 }
 
 .player-show {
@@ -50,8 +50,9 @@
 }
 
 .search-small {
-  display: inline-block;
-  margin: 5vh 0px 50px 25vw;
+  display: block;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
   box-shadow: none;
   transition: all 1s;
 }
@@ -84,44 +85,83 @@
   margin-bottom: 15px;
 }
 
-.result-box {
-  
-}
-
-
 
 .results {
   display: none;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
 }
 
 .results-show {
+  display: block;
+}
+
+
+.result-box {
+  width: 100%;
+  height: 50vh;
   display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*ul {
+
+}*/
+
+ul:nth-child(1) {
+  background-color: #E1386B;
+  transition: all 2s;
+}
+
+ul:nth-child(2) {
+  background-color: #8738E1;
+}
+
+ul:nth-child(3) {
+  background-color: #3896E1;
+}
+
+ul:nth-child(4) {
+  background-color: #38E1C2;
+}
+
+ul:nth-child(5) {
+  background-color: #38E178;
+}
+
+ul:nth-child(6) {
+  background-color: #E1C238;
+}
+
+ul:nth-child(7) {
+  background-color: #E14C38;
+}
+
+ul:nth-child(8) {
+  background-color: #E45252;
+}
+
+
+.album-art {
+  padding: 120px 130px;
+  grid-area: 1 / 1 / 3 / 2;
 }
 
 .album-art img{
-  width: 150px;
-  height: 150px;
+  width: 165px;
+  height: 165px;
   border-radius: 50%;
-  margin-left: 20px;
   box-shadow: 0px 0px 51px -9px rgba(0,0,0,0.75);
 }
 
-ul {
-  text-align: center;
-  margin-bottom: 5vh;
-}
+
 
 .band-name {
-  display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
-  border-bottom: solid 2px black;
-  margin: 10px;
   text-align: center;
   text-transform: uppercase;
+  padding: 50px;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 .song-title {
@@ -130,5 +170,6 @@ ul {
   font-weight: 400;
   color: darkgrey;
   text-align: center;
-  padding: 4px;
+  padding: 50px;
+  grid-area: 2 / 2 / 3 / 3;
 }
